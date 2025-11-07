@@ -14,14 +14,15 @@
 //  ⠈⠳⣴⡇⠀⠀⠈⠛⢦⣄⣠⠾⢿⣄⣀⣠⠾⣡⠞⠁⠀
 //  ⠀⠀⠈⠉⠉⠉⠁⢧⢠⠟⣽⠀⢿⠀⢧⢰⡈⠀⠀⠀⠀
 //  ⠀⠀⠀⠀⠀⠀⠐⢫⠏⢸⠁⠀⠈⢳⠘⢧⣙⢦⠀⠀⠀
+// This file overwrites the stock UV config.js
 
 self.__uv$config = {
-  prefix: "/active/uv/service/",
+  prefix: "/uv/service/",
   encodeUrl: Ultraviolet.codec.xor.encode,
   decodeUrl: Ultraviolet.codec.xor.decode,
-  handler: "/active/uv/uv.handler.js",
-  client: "/active/uv/uv.client.js",
-  bundle: "/active/uv/uv.bundle.js",
-  config: "/active/uv/uv.config.js",
-  sw: "/active/uv/uv.sw.js",
+  handler: "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/uv/uv.handler.js",
+  client: "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/uv/uv.client.js",
+  bundle: "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/uv/uv.bundle.js",
+  config: "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/uv/uv.config.js",
+  sw: "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/uv/uv.sw.js",
 };
