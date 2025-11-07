@@ -1,8 +1,8 @@
-import { registerSW } from "/active/prxy/register-sw.mjs";
-import * as BareMux from "/active/prxy/baremux/index.mjs";
-import { getFavicon, rAlert } from "./utils.mjs";
+import { registerSW } from "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/register-sw.mjs";
+import * as BareMux from "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/baremux/index.mjs";
+import { getFavicon, rAlert } from "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/scriptspr/utils.mjs";
 
-const connection = new BareMux.BareMuxConnection("/active/prxy/baremux/worker.js");
+const connection = new BareMux.BareMuxConnection("https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/baremux/worker.js");
 
 export function search(input, template) {
   try {
@@ -28,14 +28,14 @@ export async function getUV(input) {
 
   let url = search(input, "https://html.duckduckgo.com/html?t=h_&q=%s");
 
-  let wispUrl = "wss://gointospace.app/wisp/";
-  if ((await connection.getTransport()) !== "/active/prxy/epoxy/index.mjs") {
-    await connection.setTransport("/active/prxy/epoxy/index.mjs", [
+  let wispUrl = "wss://wisp.rhw.one/";
+  if ((await connection.getTransport()) !== "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/baremux/index.mjs") {
+    await connection.setTransport("https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/baremux/index.mjs", [
       { wisp: wispUrl },
     ]);
   }
-  if ((await connection.getTransport()) !== "/activeprxy/libcurl/libcurl.mjs") {
-    await connection.setTransport("/active/prxy/libcurl/libcurl.mjs", [
+  if ((await connection.getTransport()) !== "https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/libcurl/libcurl.mjs") {
+    await connection.setTransport("https://raw.githubusercontent.com/denduednue/UV-Static-2.0/refs/heads/main/active/prxy/libcurl/libcurl.mjs", [
       { wisp: wispUrl },
     ]);
   }
